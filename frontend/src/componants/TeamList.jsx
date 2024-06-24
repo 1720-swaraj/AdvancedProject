@@ -6,6 +6,10 @@ const TeamList = () => {
   const [teams, setTeams] = useState([]);
   console.log(teams);
 
+  const NavigateToTeamForm = () => {
+    return (window.location.href = "/team/new");
+  };
+
   useEffect(() => {
     const fetchTeams = async () => {
       try {
@@ -34,6 +38,11 @@ const TeamList = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="team-list-footer">
+        <button onClick={NavigateToTeamForm} className="add-team-button">
+          Add Task
+        </button>
       </div>
     </div>
   );

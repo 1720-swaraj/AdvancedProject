@@ -8,7 +8,7 @@ import TeamList from "./componants/TeamList.jsx";
 import TeamForm from "./componants/TeamForm.jsx";
 import TimeEntryList from "./componants/TimeEntryList.jsx";
 import TimeEntryForm from "./componants/TimeEntryForm.jsx";
-import Dashbord from "./componants/Dashbord.jsx";
+import Dashboard from "./componants/Dashboard.jsx";
 import NavBar from "./componants/NavBar.jsx";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Login from "./componants/Login.jsx";
@@ -22,7 +22,7 @@ const App = () => {
           <NavBar />
           <div className="container">
             <Routes>
-              <Route path="/dashbord" element={<Dashbord />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />

@@ -1,0 +1,57 @@
+.team-form .input-group .members-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.team-form .input-group .member-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team-form .input-group .member-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.labels {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.team-list-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .add-team-button {
+    padding: 8px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-team-button:hover {
+    background-color: #0056b3;
+  }
