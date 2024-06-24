@@ -1,0 +1,43 @@
+/* NavBar.css */
+body {
+  padding-top: 60px; /* Adjust padding to avoid overlap with navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 14px 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-item a:hover {
+  background-color: #575757;
+  color: white;
+}
+
+.active-link {
+  background-color: #04aa6d;
+  color: white;
+}
