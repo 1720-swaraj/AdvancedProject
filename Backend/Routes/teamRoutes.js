@@ -4,4 +4,4 @@ import { createTeam, getTeams } from "../Controllers/teamController.js";
 export const teamRouter = express.Router();
 
 teamRouter.route("/").post(createTeam);
-teamRouter.route("/").post(getTeams);
+teamRouter.route("/").get(getTeams);

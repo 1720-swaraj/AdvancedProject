@@ -5,7 +5,12 @@ const team = new mongoose.Schema({
     type: String,
     required: true,
   },
-  members: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+  members: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
 });
 
 export const teamsSchema = mongoose.model("Teams", team);
