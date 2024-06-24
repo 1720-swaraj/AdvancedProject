@@ -9,21 +9,28 @@ const Register = () => {
   const [role, setRole] = useState("");
   const [users, setUsers] = useState([]);
   const [errorMeassage, setErrorMessage] = useState("");
+
   useEffect(() => {
     const fetchUsersEmail = async () => {
-      const Users = await axios.get("http://localhost:9999/api/users");
-      setUsers(Users);
+      try {
+        const Users = await axios.get("http://localhost:9999/api/users");
+        setUsers(Users.data.users);
+      } catch (error) {
+        console.log(error);
+      }
     };
     fetchUsersEmail();
   }, []);
 
   const checkEmailIsPresentOrNot = () => {
-    return users.filter((user) => user.email === email);
+    const val = users.some((user) => user.email == email);
+    console.log("from front end", val);
+    return val;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (checkEmailIsPresentOrNot) {
+    if (checkEmailIsPresentOrNot()) {
       setErrorMessage("User already exists");
     } else {
       const url = "http://localhost:9999/api/auth/register";
