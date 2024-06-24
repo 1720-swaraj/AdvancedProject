@@ -31,3 +31,19 @@ export const getTask = async (req, res) => {
     return res.status(500).json({ message: "Failed to get tasks", error });
   }
 };
+
+// --------------------->>Delete task
+
+export const deleteTask = async (req, res) => {
+  const taskId = req.params.id;
+  try {
+    const deleteTaskById = await taskSchema.findByIdAndDelete({ _id: taskId });
+    return res
+      .status(200)
+      .json({ message: "deleted succesfully", deleteTaskById });
+  } catch (error) {
+    return res.status(404).json({ message: error });
+  }
+};
+
+

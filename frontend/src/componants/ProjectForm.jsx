@@ -50,7 +50,7 @@ const ProjectForm = () => {
         <h2>Create Project</h2>
         <form onSubmit={createProjectHandler} className="project-form">
           <div className="input-group">
-            <label>Project Name</label>
+            <label className="label">Project Name</label>
             <input
               type="text"
               value={projectName}
@@ -60,7 +60,7 @@ const ProjectForm = () => {
             />
           </div>
           <div className="input-group">
-            <label>Description</label>
+            <label className="label">Description</label>
             <input
               type="textarea"
               name="description"
@@ -72,10 +72,8 @@ const ProjectForm = () => {
             />
           </div>
           <div className="input-group">
-            <center>
-              <label className="label">Manager</label>
-              <hr className="hr-tag" />
-            </center>
+            <label className="label">Managers :-</label>
+
             <div className="role-group">
               {users
                 .filter((user) => user.role === "Project Manager")
@@ -97,10 +95,7 @@ const ProjectForm = () => {
             </div>
           </div>
           <div className="input-group">
-            <center>
-              <label className="label">Select Team Members</label>
-              <hr className="hr-tag" />
-            </center>
+            <label className="label">Select Team Members :-</label>
             <div className="role-group">
               {users.map((user) => (
                 <div key={user._id}>

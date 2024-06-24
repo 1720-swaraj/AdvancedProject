@@ -47,7 +47,7 @@ h2 {
     font-weight: bold;
   }
 .project-checkbox {
-  margin-right: 2010px;
+  margin-right: 20px;
 }
 
 .project-button {
@@ -64,9 +64,6 @@ h2 {
 .project-button:hover {
   background-color: #0056b3;
 }
-.hr-tag{
-    margin-top: 0px;
-    border: 3px solid rgb(255, 0, 0);
-}
+
 
 
