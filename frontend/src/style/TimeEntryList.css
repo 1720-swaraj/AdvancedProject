@@ -1,0 +1,58 @@
+.time-entry-list-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.time-entry-list-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.time-entry-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-entry-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time-entry-task {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.time-entry-user,
+.time-entry-timespent,
+.time-entry-date {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+time-list-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .add-time-button {
+    padding: 8px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-time-button:hover {
+    background-color: #0056b3;
+  }

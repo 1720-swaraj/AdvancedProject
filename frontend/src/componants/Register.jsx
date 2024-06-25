@@ -47,6 +47,7 @@ const Register = () => {
   };
 
   return (
+    <center>
     <div className="auth-container">
       <h2>Register</h2>
       <form onSubmit={handleSubmit} className="auth-form">
@@ -108,6 +109,7 @@ const Register = () => {
         </button>
       </form>
     </div>
+    </center>
   );
 };
 

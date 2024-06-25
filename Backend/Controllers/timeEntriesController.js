@@ -28,7 +28,7 @@ export const getTimeEntries = async (req, res) => {
       .find()
       .populate("task")
       .populate("user");
-    return res.status(200).json({ timeEntries });
+    return res.status(200).json({ timeEntries:timeEntries });
   } catch (error) {
     return res
       .status(500)
