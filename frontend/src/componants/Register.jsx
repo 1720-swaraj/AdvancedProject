@@ -37,8 +37,7 @@ const Register = () => {
       const payload = { name, email, password, role };
       try {
         const response = await axios.post(url, payload);
-        const token = response.data.token;
-        localStorage.setItem("authToken", token);
+        console.log(response)
         window.location.href = "/login";
       } catch (error) {
         console.error(error);

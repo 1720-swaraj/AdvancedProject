@@ -10,6 +10,7 @@ import { teamRouter } from "./Routes/teamRoutes.js";
 import { timeEntriesRouter } from "./Routes/timeEntriesRoutes.js";
 import { usersRouter } from "./Routes/userRoutes.js";
 import cookieParser from "cookie-parser";
+import { checkForAuthentication } from "./middleware/authMiddleware.js";
 const app = express();
 
 //----------------->>database connection
@@ -22,9 +23,11 @@ dbConnection()
   });
 
 //------------------>>middleware
+
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors());
+app.use(checkForAuthentication);
 
 //------------------>>Routes
 app.use("/api/auth", staticRouter);

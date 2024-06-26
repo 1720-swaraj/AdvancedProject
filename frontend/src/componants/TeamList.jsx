@@ -41,7 +41,7 @@ const TeamList = () => {
       </div>
       <div className="team-list-footer">
         <button onClick={NavigateToTeamForm} className="add-team-button">
-          Add Task
+          Add Team
         </button>
       </div>
     </div>

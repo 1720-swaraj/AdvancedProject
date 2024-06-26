@@ -31,7 +31,7 @@ const TimeEntryList = () => {
           <div key={entry._id} className="time-entry-item">
             <h4 className="time-entry-task">{entry.task.title}</h4>
             <p className="time-entry-user">User: {entry.user.name}</p>
-            <p className="time-entry-timespent">Time Spent: {entry.timespent}</p>
+            <p className="time-entry-timespent">Time Spent: {entry.timespent}h</p>
             <p className="time-entry-date">Date: {entry.date}</p>
           </div>
         ))}
