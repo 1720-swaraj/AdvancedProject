@@ -37,6 +37,6 @@ app.use("/api/task", taskRouter);
 app.use("/api/team", teamRouter);
 app.use("/api/timeEntries", timeEntriesRouter);
 //------------------->>connection
-app.listen(process.env.PORT, () => {
-  console.log(`listning to ${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`listning to ${PORT}`);
 });
