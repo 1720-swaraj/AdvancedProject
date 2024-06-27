@@ -37,8 +37,8 @@ const Dashboard = () => {
             <p>Information about your teams.</p>
           </div>
           <div id="settings">
-            <h2>Settings</h2>
-            <p>Manage your settings.</p>
+            <h2>Time Entries</h2>
+            <p>Manage your Time Entries.</p>
           </div>
         </section>
       </div>

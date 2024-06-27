@@ -10,22 +10,22 @@ const NavBar = () => {
               Home <span className="sr-only"></span>
             </Link>
           </li>
-          <li className="nav-item active">
+          <li className="nav-item ">
             <Link className="nav-link" to="/projects">
               Projects <span className="sr-only"></span>
             </Link>
           </li>
-          <li className="nav-item active">
+          <li className="nav-item ">
             <Link className="nav-link" to="/tasks">
               Tasks <span className="sr-only"></span>
             </Link>
           </li>
-          <li className="nav-item active">
+          <li className="nav-item ">
             <Link className="nav-link" to="/teams">
               Teams <span className="sr-only"></span>
             </Link>
           </li>
-          <li className="nav-item active">
+          <li className="nav-item ">
             <Link className="nav-link" to="/timeentries">
               Time Entries <span className="sr-only"></span>
             </Link>
