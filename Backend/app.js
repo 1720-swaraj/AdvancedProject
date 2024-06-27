@@ -12,7 +12,7 @@ import { usersRouter } from "./Routes/userRoutes.js";
 import cookieParser from "cookie-parser";
 import { checkForAuthentication } from "./middleware/authMiddleware.js";
 const app = express();
-
+const PORT = process.env.PORT || 9999
 //----------------->>database connection
 dbConnection()
   .then(() => {
